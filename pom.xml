@@ -130,5 +130,6 @@
 
   <modules>
     <module>junit4-features</module>
+    <module>tdd-demo</module>
   </modules>
 </project>
