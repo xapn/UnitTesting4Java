@@ -9,11 +9,11 @@ public class ElectricWindows {
     
     private final boolean open = false;
     
-    public void fermer() {
+    public void close() {
         throw new RuntimeException("Not yet implemented");
     }
     
-    public void ouvrir() {
+    public void open() {
         throw new RuntimeException("Not yet implemented");
     }
 

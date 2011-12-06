@@ -11,7 +11,7 @@ public class GlobalPositioningSystem {
     private Position currentPosition;
     private Position destination;
     private Direction direction;
-    private boolean gpsOn;
+    private boolean gpsTurnedOn;
     private IRoadMap roadMap;
     
     /**
@@ -67,12 +67,12 @@ public class GlobalPositioningSystem {
     }
     
     /**
-     * Getter for the field {@code gpsOn}
+     * Getter for the field {@code gpsTurnedOn}
      * 
-     * @return the gpsOn
+     * @return the gpsTurnedOn
      */
-    public boolean isGpsOn() {
-        return gpsOn;
+    public boolean isTurnedOn() {
+        return gpsTurnedOn;
     }
     
     /**
@@ -103,12 +103,12 @@ public class GlobalPositioningSystem {
     }
     
     /**
-     * Setter for the field {@code gpsOn}
+     * Setter for the field {@code gpsTurnedOn}
      * 
-     * @param gpsOn the gpsOn to set
+     * @param gpsTurnedOn the gpsTurnedOn to set
      */
-    public void setGpsOn(boolean gpsOn) {
-        this.gpsOn = gpsOn;
+    public void setGpsTurnedOn(boolean gpsTurnedOn) {
+        this.gpsTurnedOn = gpsTurnedOn;
     }
     
     /**
@@ -121,9 +121,9 @@ public class GlobalPositioningSystem {
     }
     
     /**
-     * Turn around
+     * Give advise about the way
      * 
-     * @return true if one shall turn around
+     * @return true if one shall turn around, false otherwise
      */
     public boolean turnAround() {
         throw new RuntimeException("Not yet implemented");

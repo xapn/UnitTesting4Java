@@ -10,7 +10,7 @@ package xapn.testing.tdd.car.v1;
  */
 public class Headlights {
     
-    private boolean on;
+    private boolean turnedOn;
     
     /**
      * Default constructor
@@ -20,9 +20,27 @@ public class Headlights {
     }
     
     /**
+     * Getter for the field {@code turnedOn}
+     * 
+     * @return the turnedOn
+     */
+    public boolean isTurnedOn() {
+        return turnedOn;
+    }
+    
+    /**
+     * Setter for the field {@code turnedOn}
+     * 
+     * @param turnedOn the turnedOn to set
+     */
+    public void setTurnedOn(boolean turnedOn) {
+        this.turnedOn = turnedOn;
+    }
+    
+    /**
      * Turn off
      */
-    public void eteindre() {
+    public void turnOff() {
         throw new RuntimeException("Not yet implemented");
     }
     
@@ -31,21 +49,5 @@ public class Headlights {
      */
     public void turnOn() {
         throw new RuntimeException("Not yet implemented");
-    }
-
-    /**
-     * Getter for the field {@code on}
-     * @return the on
-     */
-    public boolean isOn() {
-        return on;
-    }
-
-    /**
-     * Setter for the field {@code on}
-     * @param on the on to set
-     */
-    public void setOn(boolean on) {
-        this.on = on;
     }
 }

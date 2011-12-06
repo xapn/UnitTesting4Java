@@ -148,7 +148,7 @@ public class CarTest {
         // The engine must be on.
         assertTrue(car.getEngine().isOn());
         // The GPS must be working.
-        assertTrue(car.getGps().isGpsOn());
+        assertTrue(car.getGps().isTurnedOn());
         
         EasyMock.verify(roadMapMock);
     }
@@ -173,9 +173,9 @@ public class CarTest {
         assertFalse(car.getEngine().isOn());
         assertEquals(0, car.getEngine().getSpeed());
         // Headlights must be turned off to avoid draining the battery.
-        assertFalse(car.getHeadlights().isOn());
+        assertFalse(car.getHeadlights().isTurnedOn());
         // The GPS must be turned off.
-        assertFalse(car.getGps().isGpsOn());
+        assertFalse(car.getGps().isTurnedOn());
         
         EasyMock.verify(roadMapMock);
     }
