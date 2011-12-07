@@ -7,25 +7,13 @@ package xapn.testing.tdd.car.v1;
  */
 public class Engine {
     
-    private boolean on = false;
     private int speed = 0;
+    private boolean turnedOn = false;
     
     /**
      * Default constructor
      */
     public Engine() {
-        throw new RuntimeException("Not yet implemented");
-    }
-    
-    public void speedUp(int delta) {
-        throw new RuntimeException("Not yet implemented");
-    }
-    
-    public void stop() {
-        throw new RuntimeException("Not yet implemented");
-    }
-    
-    public void start() {
         throw new RuntimeException("Not yet implemented");
     }
     
@@ -39,25 +27,12 @@ public class Engine {
     }
     
     /**
-     * Getter for the field {@code on}
+     * Getter for the field {@code turnedOn}
      * 
-     * @return the on
+     * @return the turnedOn
      */
-    public boolean isOn() {
-        return on;
-    }
-    
-    public void speedDown(int delta) {
-        throw new RuntimeException("Not yet implemented");
-    }
-    
-    /**
-     * Setter for the field {@code on}
-     * 
-     * @param on the on to set
-     */
-    public void setOn(boolean engineOn) {
-        this.on = engineOn;
+    public boolean isTurnedOn() {
+        return turnedOn;
     }
     
     /**
@@ -67,5 +42,46 @@ public class Engine {
      */
     public void setSpeed(int speed) {
         this.speed = speed;
+    }
+    
+    /**
+     * Setter for the field {@code turnedOn}
+     * 
+     * @param turnedOn the turnedOn to set
+     */
+    public void setTurnedOn(boolean turnedOn) {
+        this.turnedOn = turnedOn;
+    }
+    
+    /**
+     * Speed down
+     * 
+     * @param delta the speed difference
+     */
+    public void speedDown(int delta) {
+        throw new RuntimeException("Not yet implemented");
+    }
+    
+    /**
+     * Speed up
+     * 
+     * @param delta the speed difference
+     */
+    public void speedUp(int delta) {
+        throw new RuntimeException("Not yet implemented");
+    }
+    
+    /**
+     * Start the engine
+     */
+    public void start() {
+        throw new RuntimeException("Not yet implemented");
+    }
+    
+    /**
+     * Stop the engine
+     */
+    public void stop() {
+        throw new RuntimeException("Not yet implemented");
     }
 }

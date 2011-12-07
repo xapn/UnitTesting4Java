@@ -104,75 +104,12 @@ public class Car {
     }
     
     /**
-     * Move to a destination
+     * Move from the current position to a destination
      * 
      * @param destination the destination where to move
      */
     public void move(Position destination) {
         throw new RuntimeException("Not yet implemented");
-    }
-    
-    /**
-     * Setter for the field {@code airConditioning}
-     * 
-     * @param airConditioning the airConditioning to set
-     */
-    public void setAirConditioning(AirConditioning airConditioning) {
-        this.airConditioning = airConditioning;
-    }
-    
-    /**
-     * Setter for the field {@code doors}
-     * 
-     * @param doors the doors to set
-     */
-    public void setDoors(Doors doors) {
-        this.doors = doors;
-    }
-    
-    /**
-     * Setter for the field {@code electricWindows}
-     * 
-     * @param electricWindows the electricWindows to set
-     */
-    public void setElectricWindows(ElectricWindows electricWindows) {
-        this.electricWindows = electricWindows;
-    }
-    
-    /**
-     * Setter for the field {@code engine}
-     * 
-     * @param engine the engine to set
-     */
-    public void setEngine(Engine engine) {
-        this.engine = engine;
-    }
-    
-    /**
-     * Setter for the field {@code gps}
-     * 
-     * @param gps the gps to set
-     */
-    public void setGps(GlobalPositioningSystem gps) {
-        this.gps = gps;
-    }
-    
-    /**
-     * Setter for the field {@code headlights}
-     * 
-     * @param headlights the headlights to set
-     */
-    public void setHeadlights(Headlights headlights) {
-        this.headlights = headlights;
-    }
-    
-    /**
-     * Setter for the field {@code wheel}
-     * 
-     * @param wheel the wheel to set
-     */
-    public void setWheel(Wheel wheel) {
-        this.wheel = wheel;
     }
     
     /**

@@ -14,14 +14,20 @@ public class Position {
     private int y;
     
     /**
+     * Default constructor
+     */
+    public Position() {
+        throw new RuntimeException("Not yet implemented");
+    }
+    
+    /**
      * Constructor
      * 
      * @param x the x axis position value
      * @param y the y axis position value
      */
     public Position(int x, int y) {
-        this.x = x;
-        this.y = y;
+        throw new RuntimeException("Not yet implemented");
     }
     
     /**

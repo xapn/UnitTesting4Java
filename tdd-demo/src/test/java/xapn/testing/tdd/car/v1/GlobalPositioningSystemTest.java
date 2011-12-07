@@ -13,10 +13,6 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import xapn.testing.tdd.car.v1.GlobalPositioningSystem;
-import xapn.testing.tdd.car.v1.IRoadMap;
-import xapn.testing.tdd.car.v1.Position;
-
 /**
  * Test Case for {@link xapn.testing.tdd.car.v1.GlobalPositioningSystem}
  * 
@@ -61,99 +57,129 @@ public class GlobalPositioningSystemTest {
      */
     @Test()
     public void testBug() {
-        LOGGER.debug("TEST testBug");
+        LOGGER.debug("TEST: testBug");
         
         gps.getCurrentPosition().change(3, 7);
         gps.getDestination().change(5, 7);
         gps.getDirection().change(1, 1);
-        assertFalse(gps.goStraightOn());
-        assertTrue(gps.turnRight());
+        assertFalse(gps.mustGoStraightOn());
+        assertTrue(gps.mustTurnRight());
     }
     
     /**
      * Test method for
+     * <<<<<<< HEAD:tdd-demo/src/test/java/xapn/testing/tdd/car/v1/
+     * GlobalPositioningSystemTest.java
      * {@link xapn.testing.tdd.car.v1.GlobalPositioningSystem#goStraightOn()} .
+     * =======
+     * {@link xapn.projects.tdd.car.v1.GlobalPositioningSystem#mustGoStraightOn()}
+     * .
+     * >>>>>>> e681a5c... Issue #8 - TDD
+     * Demonstration.:tdd-demo/src/test/java/xapn
+     * /projects/tdd/car/v1/GlobalPositioningSystemTest.java
      */
     @Test
-    public void testGoStraightOn() {
-        LOGGER.debug("TEST testGoStraightOn");
+    public void testMustGoStraightOn() {
+        LOGGER.debug("TEST: testMustGoStraightOn");
         
         gps.getCurrentPosition().change(1, 2);
         gps.getDestination().change(3, 5);
         
         gps.getDirection().change(1, 1);
-        assertTrue(gps.goStraightOn());
+        assertTrue(gps.mustGoStraightOn());
         
         gps.getDirection().change(0, 1);
-        assertFalse(gps.goStraightOn());
+        assertFalse(gps.mustGoStraightOn());
     }
     
     /**
      * Test method for
+     * <<<<<<< HEAD:tdd-demo/src/test/java/xapn/testing/tdd/car/v1/
+     * GlobalPositioningSystemTest.java
      * {@link xapn.testing.tdd.car.v1.GlobalPositioningSystem#turnAround()}.
+     * =======
+     * {@link xapn.projects.tdd.car.v1.GlobalPositioningSystem#mustTurnAround()}
+     * .
+     * >>>>>>> e681a5c... Issue #8 - TDD
+     * Demonstration.:tdd-demo/src/test/java/xapn
+     * /projects/tdd/car/v1/GlobalPositioningSystemTest.java
      */
     @Test
-    public void testTurnAround() {
-        LOGGER.debug("TEST testTurnAround");
+    public void testMustTurnAround() {
+        LOGGER.debug("TEST: testMustTurnAround");
         
         gps.getCurrentPosition().change(2, 2);
         gps.getDirection().change(1, 1);
         gps.getDestination().change(-5, -5);
-        assertTrue(gps.turnAround());
+        assertTrue(gps.mustTurnAround());
         
         gps.getCurrentPosition().change(2, 2);
         gps.getDirection().change(1, 1);
         gps.getDestination().change(-5, -5);
-        assertTrue(gps.turnAround());
+        assertTrue(gps.mustTurnAround());
     }
     
     /**
      * Test method for
+     * <<<<<<< HEAD:tdd-demo/src/test/java/xapn/testing/tdd/car/v1/
+     * GlobalPositioningSystemTest.java
      * {@link xapn.testing.tdd.car.v1.GlobalPositioningSystem#turnLeft()}.
+     * =======
+     * {@link xapn.projects.tdd.car.v1.GlobalPositioningSystem#mustTurnLeft()}.
+     * >>>>>>> e681a5c... Issue #8 - TDD
+     * Demonstration.:tdd-demo/src/test/java/xapn
+     * /projects/tdd/car/v1/GlobalPositioningSystemTest.java
      */
     @Test
-    public void testTurnLeft() {
-        LOGGER.debug("TEST testTurnLeft");
+    public void testMustTurnLeft() {
+        LOGGER.debug("TEST: testMustTurnLeft");
         
         gps.getDestination().change(-3, 3);
         gps.getDirection().change(0, 1);
-        assertTrue(gps.turnLeft());
+        assertTrue(gps.mustTurnLeft());
         
         gps.getDestination().change(3, 3);
         gps.getDirection().change(0, 1);
-        assertFalse(gps.turnLeft());
+        assertFalse(gps.mustTurnLeft());
         
         gps.getDestination().change(3, -3);
         gps.getDirection().change(-1, 0);
-        assertTrue(gps.turnLeft());
+        assertTrue(gps.mustTurnLeft());
         
         gps.getDestination().change(0, -3);
         gps.getDirection().change(0, 1);
-        assertTrue(gps.turnLeft());
+        assertTrue(gps.mustTurnLeft());
     }
     
     /**
      * Test method for
+     * <<<<<<< HEAD:tdd-demo/src/test/java/xapn/testing/tdd/car/v1/
+     * GlobalPositioningSystemTest.java
      * {@link xapn.testing.tdd.car.v1.GlobalPositioningSystem#turnRight()}.
+     * =======
+     * {@link xapn.projects.tdd.car.v1.GlobalPositioningSystem#mustTurnRight()}.
+     * >>>>>>> e681a5c... Issue #8 - TDD
+     * Demonstration.:tdd-demo/src/test/java/xapn
+     * /projects/tdd/car/v1/GlobalPositioningSystemTest.java
      */
     @Test
-    public void testTurnRight() {
-        LOGGER.debug("TEST testTurnRight");
+    public void testMustTurnRight() {
+        LOGGER.debug("TEST: testMustTurnRight");
         
         gps.getDestination().change(3, 3);
         gps.getDirection().change(0, 1);
-        assertTrue(gps.turnRight());
+        assertTrue(gps.mustTurnRight());
         
         gps.getDestination().change(-3, 3);
         gps.getDirection().change(0, 1);
-        assertFalse(gps.turnRight());
+        assertFalse(gps.mustTurnRight());
         
         gps.getDestination().change(-3, -3);
         gps.getDirection().change(1, 0);
-        assertTrue(gps.turnRight());
+        assertTrue(gps.mustTurnRight());
         
         gps.getDestination().change(0, -3);
         gps.getDirection().change(0, 1);
-        assertTrue(gps.turnRight());
+        assertTrue(gps.mustTurnRight());
     }
 }

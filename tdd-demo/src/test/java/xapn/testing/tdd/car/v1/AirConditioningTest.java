@@ -13,8 +13,6 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import xapn.testing.tdd.car.v1.AirConditioning;
-
 /**
  * Test Case for {@link xapn.testing.tdd.car.v1.AirConditioning}
  * 
@@ -51,7 +49,7 @@ public class AirConditioningTest {
      */
     @Test
     public void testCool() {
-        LOGGER.debug("TEST testCool");
+        LOGGER.debug("TEST: testCool");
         
         // Setup
         int currentTemperature = 35;
@@ -72,7 +70,7 @@ public class AirConditioningTest {
      */
     @Test
     public void testHeat() {
-        LOGGER.debug("TEST testHeat");
+        LOGGER.debug("TEST: testHeat");
         
         // Setup
         int currentTemperature = 10;
@@ -93,16 +91,16 @@ public class AirConditioningTest {
      */
     @Test
     public void testTurnOff() {
-        LOGGER.debug("TEST testTurnOff");
+        LOGGER.debug("TEST: testTurnOff");
         
         // Setup
-        airConditioning.setAirConditioningOn(true);
+        airConditioning.setTurnedOn(true);
         
         // Process
         airConditioning.turnOff();
         
         // Verification
-        assertFalse(airConditioning.isAirConditioningOn());
+        assertFalse(airConditioning.isTurnedOn());
     }
     
     /**
@@ -111,7 +109,7 @@ public class AirConditioningTest {
      */
     @Test
     public void testTurnOn() {
-        LOGGER.debug("TEST testTurnOn");
+        LOGGER.debug("TEST: testTurnOn");
         
         // Setup
         // Nothing else to do
@@ -120,6 +118,6 @@ public class AirConditioningTest {
         airConditioning.turnOn();
         
         // Verification
-        assertTrue(airConditioning.isAirConditioningOn());
+        assertTrue(airConditioning.isTurnedOn());
     }
 }

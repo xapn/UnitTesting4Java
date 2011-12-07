@@ -67,7 +67,7 @@ public class Direction {
     }
     
     /**
-     * Give the direction on the left
+     * Get the direction on the left
      * 
      * @return the direction on the left
      */
@@ -76,7 +76,7 @@ public class Direction {
     }
     
     /**
-     * Give the opposite direction
+     * Get the opposite direction
      * 
      * @return the opposite direction
      */
@@ -85,7 +85,7 @@ public class Direction {
     }
     
     /**
-     * Give the direction on the right
+     * Get the direction on the right
      * 
      * @return the direction on the right
      */

@@ -34,14 +34,14 @@
   </developers>
 
   <scm>
-    <connection>git://github.com/xapn/UnitTesting4Java.git</connection>
-    <developerConnection>git@github.com:xapn/UnitTesting4Java.git</developerConnection>
+    <connection>scm:git:git://github.com/xapn/UnitTesting4Java.git</connection>
+    <developerConnection>scm:git:git@github.com:xapn/UnitTesting4Java.git</developerConnection>
     <url>https://xapn@github.com/xapn/UnitTesting4Java.git</url>
   </scm>
 
   <issueManagement>
     <system>GitHub</system>
-    <url>https://github.com/xapn/UnitTesting4Java</url>
+    <url>https://github.com/xapn/UnitTesting4Java/issues</url>
   </issueManagement>
 
   <properties>

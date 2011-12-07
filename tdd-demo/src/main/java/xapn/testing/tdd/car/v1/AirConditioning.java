@@ -7,9 +7,9 @@ package xapn.testing.tdd.car.v1;
  */
 public class AirConditioning {
     
-    private boolean airConditioningOn;
     private int requiredTemperature;
     private Thermometer thermometer;
+    private boolean turnedOn;
     
     /**
      * Default constructor
@@ -46,7 +46,7 @@ public class AirConditioning {
     }
     
     /**
-     * Heat the air
+     * Heat air
      * 
      * @param delta the temperature difference
      */
@@ -55,21 +55,12 @@ public class AirConditioning {
     }
     
     /**
-     * Getter for the field {@code airConditioningOn}
+     * Getter for the field {@code turnedOn}
      * 
-     * @return the airConditioningOn
+     * @return the turnedOn
      */
-    public boolean isAirConditioningOn() {
-        return airConditioningOn;
-    }
-    
-    /**
-     * Setter for the field {@code airConditioningOn}
-     * 
-     * @param airConditioningOn the airConditioningOn to set
-     */
-    public void setAirConditioningOn(boolean airConditioningOn) {
-        this.airConditioningOn = airConditioningOn;
+    public boolean isTurnedOn() {
+        return turnedOn;
     }
     
     /**
@@ -79,6 +70,15 @@ public class AirConditioning {
      */
     public void setRequiredTemperature(int requiredTemperature) {
         this.requiredTemperature = requiredTemperature;
+    }
+    
+    /**
+     * Setter for the field {@code turnedOn}
+     * 
+     * @param turnedOn the turnedOn to set
+     */
+    public void setTurnedOn(boolean turnedOn) {
+        this.turnedOn = turnedOn;
     }
     
     /**
