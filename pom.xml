@@ -26,7 +26,12 @@
     <developer>
       <id>xapn</id>
       <name>Xavier Pigeon</name>
+      <email>xpn.projects@gmail.com</email>
       <url>https://github.com/xapn</url>
+      <roles>
+        <role>Project Administrator</role>
+        <role>Software Developer</role>
+      </roles>
       <organization>xapn</organization>
       <organizationUrl>https://github.com/xapn</organizationUrl>
       <timezone>+1</timezone>
@@ -129,6 +134,7 @@
   </dependencyManagement>
 
   <modules>
+    <module>junit3-features</module>
     <module>junit4-features</module>
     <module>tdd-demo</module>
   </modules>
