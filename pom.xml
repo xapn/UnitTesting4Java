@@ -113,6 +113,7 @@
         <version>${unitils.version}</version>
         <scope>test</scope>
       </dependency>
+      <!-- Be careful: Unitils 3.2 supports Spring 2.5.2 only, not greater. -->
       <dependency>
         <groupId>org.unitils</groupId>
         <artifactId>unitils-spring</artifactId>
@@ -130,14 +131,6 @@
         <groupId>ch.qos.logback</groupId>
         <artifactId>logback-classic</artifactId>
         <version>1.0.0</version>
-      </dependency>
-
-      <!-- Spring -->
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-test</artifactId>
-        <version>${spring.version}</version>
-        <scope>test</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>
