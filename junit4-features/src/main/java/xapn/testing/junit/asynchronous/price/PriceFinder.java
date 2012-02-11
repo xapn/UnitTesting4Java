@@ -5,8 +5,6 @@ package xapn.testing.junit.asynchronous.price;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 /**
  * A PriceFinder is a class that goes and retrieves a price for a symbol
@@ -17,12 +15,10 @@ import org.springframework.stereotype.Service;
  * 
  * @author Xavier Pigeon
  */
-@Service
 public class PriceFinder {
     
     private static final Logger LOGGER = LoggerFactory.getLogger(PriceFinder.class);
     
-    @Autowired
     private PriceService priceService;
     
     /**
@@ -35,5 +31,23 @@ public class PriceFinder {
         LOGGER.debug("Service calling");
         // Comment the following code line for the test failing.
         priceService.findPrice(symbol, handler);
+    }
+    
+    /**
+     * Getter for the field {@code priceService}
+     * 
+     * @return the priceService
+     */
+    public PriceService getPriceService() {
+        return priceService;
+    }
+    
+    /**
+     * Setter for the field {@code priceService}
+     * 
+     * @param priceService the priceService to set
+     */
+    public void setPriceService(PriceService priceService) {
+        this.priceService = priceService;
     }
 }

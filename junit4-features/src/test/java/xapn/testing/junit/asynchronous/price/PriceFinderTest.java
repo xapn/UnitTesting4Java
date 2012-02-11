@@ -11,12 +11,8 @@ import java.util.concurrent.TimeUnit;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 /**
  * To test an asynchronous request, a handler can be used from the test case
@@ -33,14 +29,12 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * 
  * @author Xavier Pigeon
  */
-@RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = { "/applicationContext.xml" })
 public class PriceFinderTest {
     
     private static final Logger LOGGER = LoggerFactory.getLogger(PriceFinderTest.class);
     private static final int LATCH_COUNT = 1;
     
-    @Autowired
+    // Object under test
     private PriceFinder priceFinder;
     
     private Price receivedPrice;
@@ -49,7 +43,10 @@ public class PriceFinderTest {
     private CountDownLatch latch4 = new CountDownLatch(LATCH_COUNT);
     
     @Before
-    public void setUp() throws Exception {}
+    public void setUp() throws Exception {
+        priceFinder = new PriceFinder();
+        priceFinder.setPriceService(new PriceService());
+    }
     
     @After
     public void tearDown() throws Exception {}

@@ -9,5 +9,4 @@ package xapn.testing.junit.asynchronous.price;
  * @author Xavier Pigeon
  */
 public class Price {
-    
 }
