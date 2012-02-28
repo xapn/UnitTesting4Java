@@ -146,5 +146,6 @@
     <module>tdd-demo</module>
     <module>unitils-features</module>
     <module>hamcrest-sugar-generation</module>
+    <module>fest-features</module>
   </modules>
 </project>
