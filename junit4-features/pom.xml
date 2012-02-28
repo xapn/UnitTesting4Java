@@ -26,6 +26,11 @@
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
     </dependency>
+    <!-- Testing Utilities -->
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest-all</artifactId>
+    </dependency>
 
     <!-- Logging Frameworks -->
     <dependency>
