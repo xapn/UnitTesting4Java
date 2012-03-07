@@ -25,5 +25,9 @@
       <groupId>org.unitils</groupId>
       <artifactId>unitils-inject</artifactId>
     </dependency>
+    <dependency>
+      <groupId>org.unitils</groupId>
+      <artifactId>unitils-easymock</artifactId>
+    </dependency>
   </dependencies>
 </project>
