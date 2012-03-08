@@ -113,6 +113,12 @@
         <version>${unitils.version}</version>
         <scope>test</scope>
       </dependency>
+      <dependency>
+        <groupId>org.unitils</groupId>
+        <artifactId>unitils-spring</artifactId>
+        <version>${unitils.version}</version>
+        <scope>test</scope>
+      </dependency>
 
       <!-- Logging Frameworks -->
       <dependency>
