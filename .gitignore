@@ -4,6 +4,7 @@
 bin
 out
 target
+generated
 
 # OS generated files #
 ######################

@@ -31,6 +31,12 @@
       <groupId>org.hamcrest</groupId>
       <artifactId>hamcrest-all</artifactId>
     </dependency>
+    <dependency>
+      <groupId>xapn.testing</groupId>
+      <artifactId>hamcrest-sugar-generation</artifactId>
+      <version>1.0-SNAPSHOT</version>
+      <scope>test</scope>
+    </dependency>
 
     <!-- Logging Frameworks -->
     <dependency>

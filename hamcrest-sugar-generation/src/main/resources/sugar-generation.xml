@@ -1,0 +1,11 @@
+<matchers>
+
+  <!-- Hamcrest library -->
+  <factory class="org.hamcrest.core.Is"/>
+
+  <!-- Custom extension -->
+  <factory class="xapn.testing.hamcrest.sugar.ReadyMatcher"/>
+  <factory class="xapn.testing.hamcrest.sugar.PowerfulMatcher"/>
+  <factory class="xapn.testing.hamcrest.sugar.OrdinaryMatcher"/>
+
+</matchers>
