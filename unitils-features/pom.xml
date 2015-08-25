@@ -12,6 +12,10 @@
   <artifactId>unitils-features</artifactId>
   <packaging>jar</packaging>
   <name>Unitils Features</name>
+  
+  <properties>
+    <spring.version>3.2.0.RELEASE</spring.version>
+  </properties>
 
   <dependencies>
     <dependency>
@@ -30,17 +34,23 @@
       <groupId>org.unitils</groupId>
       <artifactId>unitils-spring</artifactId>
     </dependency>
+    
+    <!-- Spring Framework -->
+    <!-- Be careful : Unitils supports its version of Spring only, not greater. -->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-context</artifactId>
+      <version>${spring.version}</version>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-beans</artifactId>
+      <version>${spring.version}</version>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-core</artifactId>
+      <version>${spring.version}</version>
     </dependency>
   </dependencies>
 </project>

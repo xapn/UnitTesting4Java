@@ -54,7 +54,7 @@
     <project.build.java.target>1.6</project.build.java.target>
     <spring.version>4.2.0.RELEASE</spring.version>
     <easymock.version>3.1</easymock.version>
-    <unitils.version>3.2</unitils.version>
+    <unitils.version>3.4.2</unitils.version>
   </properties>
 
   <build>
@@ -124,7 +124,7 @@
       <dependency>
         <groupId>org.unitils</groupId>
         <artifactId>unitils</artifactId>
-        <version>3.2</version>
+        <version>${unitils.version}</version>
         <type>pom</type>
         <scope>test</scope>
       </dependency>
@@ -140,7 +140,7 @@
         <version>${unitils.version}</version>
         <scope>test</scope>
       </dependency>
-      <!-- Be careful: Unitils 3.2 supports Spring 2.5.2 only, not greater. -->
+      <!-- Be careful : Unitils supports its version of Spring only, not greater. -->
       <dependency>
         <groupId>org.unitils</groupId>
         <artifactId>unitils-spring</artifactId>
