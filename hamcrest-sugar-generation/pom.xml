@@ -5,14 +5,12 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>xapn.projects</groupId>
+    <groupId>xapn.testing</groupId>
     <artifactId>unit-testing</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <groupId>xapn.testing</groupId>
   <artifactId>hamcrest-sugar-generation</artifactId>
-  <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>Hamcrest Sugar Generation</name>
   <description>Sugar generation of a single custom matcher by the Hamcrest generator.</description>
