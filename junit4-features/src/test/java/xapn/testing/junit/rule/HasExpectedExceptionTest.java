@@ -3,7 +3,7 @@
  */
 package xapn.testing.junit.rule;
 
-import static org.hamcrest.text.StringStartsWith.startsWith;
+import static org.hamcrest.core.StringStartsWith.startsWith;
 
 import org.junit.Rule;
 import org.junit.Test;
