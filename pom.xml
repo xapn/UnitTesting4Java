@@ -51,7 +51,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.build.java.target>1.6</project.build.java.target>
+    <project.build.java.target>1.8</project.build.java.target>
     <spring.version>4.2.0.RELEASE</spring.version>
     <unitils.version>3.4.2</unitils.version>
   </properties>
