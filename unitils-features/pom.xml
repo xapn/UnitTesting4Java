@@ -12,8 +12,9 @@
   <artifactId>unitils-features</artifactId>
   <packaging>jar</packaging>
   <name>Unitils Features</name>
-  
+
   <properties>
+    <easymock.version>3.2</easymock.version>
     <spring.version>3.2.0.RELEASE</spring.version>
   </properties>
 
@@ -22,6 +23,8 @@
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
     </dependency>
+
+    <!-- Testing Utilities -->
     <dependency>
       <groupId>org.unitils</groupId>
       <artifactId>unitils-inject</artifactId>
@@ -34,7 +37,21 @@
       <groupId>org.unitils</groupId>
       <artifactId>unitils-spring</artifactId>
     </dependency>
-    
+
+    <!-- Mock Object Frameworks -->
+    <dependency>
+      <groupId>org.easymock</groupId>
+      <artifactId>easymock</artifactId>
+      <version>${easymock.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.easymock</groupId>
+      <artifactId>easymockclassextension</artifactId>
+      <version>${easymock.version}</version>
+      <scope>test</scope>
+    </dependency>
+
     <!-- Spring Framework -->
     <!-- Be careful : Unitils supports its version of Spring only, not greater. -->
     <dependency>

@@ -53,7 +53,6 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.build.java.target>1.6</project.build.java.target>
     <spring.version>4.2.0.RELEASE</spring.version>
-    <easymock.version>3.1</easymock.version>
     <unitils.version>3.4.2</unitils.version>
   </properties>
 
@@ -98,13 +97,7 @@
       <dependency>
         <groupId>org.easymock</groupId>
         <artifactId>easymock</artifactId>
-        <version>${easymock.version}</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.easymock</groupId>
-        <artifactId>easymockclassextension</artifactId>
-        <version>${easymock.version}</version>
+        <version>3.3.1</version>
         <scope>test</scope>
       </dependency>
 
