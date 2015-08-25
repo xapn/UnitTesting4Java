@@ -10,9 +10,7 @@
     <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <groupId>xapn.testing</groupId>
   <artifactId>tdd-demo</artifactId>
-  <version>1.0-SNAPSHOT</version>
   <name>Test-Driven Development (TDD) Demo</name>
   <description>Demonstration about TDD as software development process 
   with a slideshow to explain the TDD concepts and an application example to put them in practice</description>
@@ -34,13 +32,11 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <scope>test</scope>
     </dependency>
     <!-- Mock Object Frameworks -->
     <dependency>
       <groupId>org.easymock</groupId>
       <artifactId>easymock</artifactId>
-      <scope>test</scope>
     </dependency>
 
     <!-- Logging Frameworks -->
