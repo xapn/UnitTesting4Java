@@ -52,7 +52,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.build.java.target>1.6</project.build.java.target>
-    <spring.version>3.0.6.RELEASE</spring.version>
+    <spring.version>4.2.0.RELEASE</spring.version>
     <easymock.version>3.1</easymock.version>
     <unitils.version>3.2</unitils.version>
   </properties>
@@ -93,6 +93,7 @@
         <version>6.3</version>
         <scope>test</scope>
       </dependency>
+
       <!-- Mock Object Frameworks -->
       <dependency>
         <groupId>org.easymock</groupId>
@@ -106,6 +107,7 @@
         <version>${easymock.version}</version>
         <scope>test</scope>
       </dependency>
+
       <!-- Testing Utilities -->
       <dependency>
         <groupId>org.hamcrest</groupId>
@@ -143,6 +145,23 @@
         <artifactId>unitils-spring</artifactId>
         <version>${unitils.version}</version>
         <scope>test</scope>
+      </dependency>
+
+      <!-- Spring Framework -->
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context</artifactId>
+        <version>${spring.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-beans</artifactId>
+        <version>${spring.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-core</artifactId>
+        <version>${spring.version}</version>
       </dependency>
 
       <!-- Logging Frameworks -->
